@@ -79,7 +79,7 @@ console.log("The circle area is: " + areaCircle(radius,PI) + " cms^2");
 
 console.groupEnd();
 
-//HTML interaction
+//HTML square interaction
 
 function clickSquarePerimeter(){
     const input = document.getElementById("inputSquare");
@@ -97,3 +97,4 @@ function clickSquareArea(){
 
 }
 
+//HTML triangle interaction
