@@ -1,0 +1,16 @@
+
+Primetro de un cuadrado (Cuanto mide el borde del cuadrado)
+    -> Medida de un lado * 4
+Area de un cuadrado (El interior del cuadrado)
+    -> Lado * Lado -> Lado**2 -> resultado es al cuadrado
+
+Perimero del trinagulo 
+    -> lado + lado + lado
+Area de un trinagulo
+    -> (Base * Altura)/2
+
+Perimetro circulo (Circunferencia)
+    -> Diametro * PI(3,1415)
+Area del circulo
+    -> (Radio**2) * PI
+
