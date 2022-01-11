@@ -6,11 +6,6 @@ const sideA = 5; const sideB = 15; const sideC = 32;
     isosceles = Two sides equal
     scalene = No side equal
 */
-<<<<<<< HEAD
-function sideComparison(sideA, sideB, sideB){
-
-}
-=======
 const sides = {
     sideA = 1,
     sideB = 5,
@@ -32,4 +27,3 @@ function sideComparison(sideA, sideB, sideC){
 }
 
 function findHypotenuse( )
->>>>>>> 09cdf66f746bda1a3665f32f8cb24355958fbb94
