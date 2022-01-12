@@ -3,6 +3,8 @@
     Perimeter = side * 4 || Area = side ** 2
 */
 
+//This step is to try.
+
 function perimeterSquare(sideSquare) {
     return sideSquare * 4;
 }
@@ -79,21 +81,5 @@ console.log("The circle area is: " + areaCircle(radius,PI) + " cms^2");
 
 console.groupEnd();
 
-//HTML interaction
 
-function clickSquarePerimeter(){
-    const input = document.getElementById("inputSquare");
-    const value = input.value;
-
-    const perimeter = perimeterSquare(value);
-    alert(perimeter);
-}
-function clickSquareArea(){
-    const input = document.getElementById("inputSquare");
-    const value = input.value;
-
-    const area = areaSquare(value);
-    alert(area);
-
-}
 

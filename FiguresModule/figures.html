@@ -10,20 +10,48 @@
     <header>
         <center><h1>Geometrical Figures</h1></center>
     </header>
+    <br><br>
     <section>
         <center><h2>Calculate Square measurement</h2></center>
         <center>
-            <form action="">
+            <form>
                 <label for="inputSquare">
                     Write the side measures of your Square
                 </label>
                 <input id="inputSquare" type="number">
                 <button type="button" onclick="clickSquarePerimeter()">Calculate perimeter</button>
                 <button type="button" onclick="clickSquareArea()">Calculate Area</button>
+                <br><br><br>
         </form>
         </center>
     </section>
+
+    <section>
+        <center><h2>Calculate Triangle measurement</h2></center>
+        <center>
+            <form>
+                <label for="inputTriangleA">
+                    Write side A of your triangle
+                </label>
+                <input id= "inputTriangleA" type="number">
+
+                <label for="inputTriangleB">
+                    Write side B of your triangle
+                </label>
+                <input id= "inputTriangleB" type="number">
+
+                <label for="inputTriangleC">
+                    Write side C of your triangle
+                </label>
+                <input id= "inputTriangleC" type="number">
+                <br><br>
+
+                <button type="button" onclick="clickTrianglePerimeter()">Calculate Perimeter</button>
+                <button type="button" onclick="clickTriangleArea()">Calculate Area</button>
+            </form>
+        </center>
+    </section>
     
-    <script src="./figures.js"></script>    
+    <script src="./calculator.js"></script>    
 </body>
 </html>

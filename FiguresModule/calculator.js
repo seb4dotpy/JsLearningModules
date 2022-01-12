@@ -1,11 +1,19 @@
-/*
-    Triangle types
-    equilateral = Al sides equal
-    isosceles = Two sides equal
-    scalene = No side equal
-*/
 
-function calculatePerimeter(sideA,sideB,sideC){
+//Measurement calculation Square
+console.group("Square");
+function perimeterSquare(sideSquare) {
+    return sideSquare * 4;
+}
+
+function areaSquare(sideSquare){
+    return sideSquare ** 2;
+}
+console.groupEnd();
+
+//Measurement calculation Triangles
+
+console.group("Triangles");
+function trianglePerimeter(sideA,sideB,sideC){
     return sideA + sideB + sideC;
 }
 
@@ -23,6 +31,7 @@ function sideComparison(sideA, sideB, sideC){
         return triangle;
     }
 }
+
 
 function base(sideA,sideB,sideC){ //Verifying the shortest side
 
@@ -82,7 +91,7 @@ function calculateHeight(sideA,sideB,sideC){ //Calculate height
     }
 }
 
-function calculateArea(sideA,sideB,sideC){
+function triangleArea(sideA,sideB,sideC){
     
     if (sideComparison(sideA,sideB,sideC) == "equilateral") {
 
@@ -97,12 +106,50 @@ function calculateArea(sideA,sideB,sideC){
         return calculateHeight(sideA,sideB,sideC);
     }
 }
+console.groupEnd();
 
 
 
+//HTML interaction
 
+//Square
 
+console.group("Square measurement");
+function clickSquarePerimeter(){
+    const input = document.getElementById("inputSquare");
+    const value = input.value;
 
+    const perimeter = perimeterSquare(value);
+    alert(perimeter);
+}
+function clickSquareArea(){
+    const input = document.getElementById("inputSquare");
+    const value = input.value;
 
+    const area = areaSquare(value);
+    alert(area);
 
+}
+console.groupEnd();
 
+//Triangle
+
+console.group("Triangle Measurement");
+function clickTrianglePerimeter(){
+    const sideA = document.getElementById("inputTriangleA");
+    const sideB = document.getElementById("inputTriangleB");
+    const sideC = document.getElementById("inputTriangleC");
+
+    const perimeter = trianglePerimeter(parseInt(sideA.value),parseInt(sideB.value),parseInt(sideC.value));
+    alert(perimeter);
+}
+
+function clickTriangleArea(){
+    const sideA = document.getElementById("inputTriangleA");
+    const sideB = document.getElementById("inputTriangleB");
+    const sideC = document.getElementById("inputTriangleC");
+
+    const area = triangleArea(sideA.value,sideB.value,sideC.value);
+    alert(area);
+}
+console.groupEnd();
