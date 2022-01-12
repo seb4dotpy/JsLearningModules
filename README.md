@@ -11,4 +11,6 @@ A js coding proyect,
 - Third: Create functions.
 - Fourth: Integrate Js to HTML.
 
+## Module 2: Calculate Prices and discount
+
 
