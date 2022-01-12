@@ -108,13 +108,29 @@ function triangleArea(sideA,sideB,sideC){
 }
 console.groupEnd();
 
+//Measurement Calculation Circle
 
+console.group("Circle")
+
+function circlePerimeter(radius){
+    var diameter = radius * 2;
+    return diameter * Math.PI;
+}
+
+function circleArea(radius){
+    return (radius ** 2) * Math.PI;
+}
+
+
+
+console.groupEnd();
 
 //HTML interaction
 
 //Square
 
-console.group("Square measurement");
+console.group("Triangle Measurement");
+
 function clickSquarePerimeter(){
     const input = document.getElementById("inputSquare");
     const value = input.value;
@@ -152,4 +168,23 @@ function clickTriangleArea(){
     const area = triangleArea(sideA.value,sideB.value,sideC.value);
     alert(area);
 }
+console.groupEnd();
+
+//Circle
+console.group("Circle");
+function clickCirclePerimeter(){
+    const input = document.getElementById("inputRadius");
+    const value = input.value;
+    
+    const perimeter = circlePerimeter(value);
+    alert(perimeter);
+}
+function clickCircleArea(){
+    const input = document.getElementById("inputRadius");
+    const value = input.value;
+    
+    const area = circleArea(value);
+    alert(area);
+}
+
 console.groupEnd();
